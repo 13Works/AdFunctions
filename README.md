@@ -4,11 +4,10 @@
 **If this list is inaccurate or if you want me to add more customs then dm me on discord "13works"**;
 
 ## From AdoptAPI
-**Ad.EjectAllHeldBabies(Object)**;
-> 'Object' is an object representing the entity from which babies should be ejected
+**Ad.EjectAllHeldBabies()**;
 
 **Ad.HoldBaby(Object)**;
-> 'Object' is an object representing a baby
+> 'Object' is a player or pet object
 
 **Ad.FlyPet(Object)**;
 > 'Object' is a pet object
@@ -50,9 +49,9 @@
 
 >* 'Player' is a Player object.
 >* 'FurnitureName' is a string representing the name of the furniture.
->* 'Action' is a string with possible values "UseBlock" or "Seat1".
->* 'Positioning' is a table with a 'cframe' key representing the position.
->* 'Target' is a string or a Player object.
+>* 'Action' is a string with possible values "UseBlock" or ("Seat" .. SeatNumber).
+>* 'Positioning' is a table with a 'cframe' key representing where the target should do the action.
+>* 'Target' is a player or pet object.
 
 **Ad.BuyFurnitures(Furniture)**;
 > 'Furniture' is a table containing furniture data.
@@ -76,7 +75,7 @@
 >* 'HouseName' is a string representing the new house name.
 
 **Ad.RateParty(TargetPlayer, Rating)**;
->* 'TargetPlayer' is a Player object.
+>* 'TargetPlayer' is a Player object representing the party host.
 >* 'Rating' is a string with possible values "great," "good," or "bad."
 
 **Ad.SellFurniture(FurnitureNames)**;
@@ -112,8 +111,8 @@
 
 ## From MonitorAPI
 **Ad.AddAdditive(AilmentName, Rate)**;
-> 'AilmentName' is an Ailment (unspecified type).
-> 'Rate' is a number.
+> 'AilmentName' is an Ailment.
+> 'Rate' is a number with unknown representation.
 
 **Ad.HealWithDoctor()**;
 
@@ -121,23 +120,23 @@
 
 ## From PetAPI
 **Ad.DoNeonFusion(Uniques)**;
-> 'Uniques' is a table of 4 strings.
+> 'Uniques' is an array of 4 pet uniques.
 
 ***
 
 ## From PetObjectAPI
 **Ad.CreatePetObject(EnumType, Properties)**;
-> 'EnumType' is a string representing the type of the pet object.
+> 'EnumType' is a string.
 > 'Properties' is a table containing properties of the pet object.
 
 **Ad.ConsumeFoodItem(Unique)**;
-> 'Unique' is a string representing the unique identifier of a food item.
+> 'Unique' is a string representing a food's unique.
 
 ***
 
 ## From QuestAPI
 **Ad.ClaimQuest(QuestId)**;
-> 'QuestId' is a string representing the ID of the quest to claim.
+> 'QuestId' is a string representing the Id of the quest to claim.
 
 **Ad.MarkQuestsViewed()**;
 
@@ -149,7 +148,7 @@
 
 **Ad.SetSetting(SettingName, Value)**;
 > 'SettingName' is a string representing the name of the setting.
-> 'Value' can be of any type, representing the value to set for the setting.
+> 'Value' representing the value to set for the setting.
 
 ***
 
