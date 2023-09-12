@@ -1,6 +1,7 @@
 # All Ad functions
-**Every ingame remote is avalible as a function, this list is for known arguments**
-**If this list is inaccurate or if you want me to add more customs then dm me on discord "13works"**
+**Every ingame remote is avalible as a function, this list is for known arguments**;
+
+**If this list is inaccurate or if you want me to add more customs then dm me on discord "13works"**;
 
 ## From AdoptAPI
 **Ad.EjectAllHeldBabies(Object)**;
